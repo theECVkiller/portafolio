@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --color-base: #808fff;
+  --nav-color-bg: #212529;
+  --underline-color-gray: rgb(64, 68, 83);
+}
+
+body {
+  background: var(--nav-color-bg);
+}
+
+.navbar {
+  width: 100%;
+  color: white;
+  display: flex;
+  padding: 10px;
+  position: fixed;
+  min-width: 240px;
+  justify-content: space-between;
+  background-color: var(--nav-color-bg);
+}
+.navbar span {
+  top: 8px;
+  position: relative;
+}
+.navbar div ul {
+  right: 15px;
+  display: flex;
+  list-style: none;
+  position: relative;
+}
+.navbar div ul li {
+  margin: 5px;
+  padding: 3px;
+  outline: 1px solid white;
+}
+.navbar div ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar div ul li:hover {
+  background: white;
+}
+
+.navbar div ul li a:hover {
+  color: var(--nav-color-bg);
+}
+
+#contenido {
+  display: flex;
+  height: 100vh;
+  background: white;
+  padding-top: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+.p_contenido {
+  width: 100%;
+  height: 90%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--nav-color-bg);
+}
+.p_contenido .description_text {
+  width: 80%;
+  height: 30px;
+  margin-top: 30px;
+  text-align: center;
+}
+.p_contenido .text_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.p_contenido .media_content {
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 90vw;
+  padding: 5px;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.p_contenido .media_content a img {
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  min-width: 40px;
+  max-width: 120px;
+  min-height: 40px;
+  max-height: 120px;
+}
+.p_contenido .media_content a img:hover {
+  margin: 12px;
+  box-shadow: 4px 3px rgb(190, 190, 190);
+  border-radius: 5px;
+}
+
+footer {
+  padding: 5px;
+  background: var(--nav-color-bg);
+}
+footer a {
+  text-decoration-color: var(--underline-color-gray);
+}
+
+/*# sourceMappingURL=estilos.css.map */
